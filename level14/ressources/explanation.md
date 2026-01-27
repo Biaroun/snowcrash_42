@@ -15,6 +15,12 @@ On attache `getflag` avec gdb et on force la valeur de retour de `getuid()`.
 ```bash
 $ gdb /bin/getflag
 
+(gdb) catch syscall ptrace
+(gdb) commands 1
+> set ($eax) = 0
+> continue
+> end
+
 break getuid
 run
 finish
